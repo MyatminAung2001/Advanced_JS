@@ -25,15 +25,15 @@ const parentFunction = () => {
     return childFunction;
 };
 
-// const result = parentFunction();
-// console.log(result); // get anonymous function
+const result = parentFunction();
+console.log(result); // get anonymous function
 
-// result();
-// result();
-// result();
+result();
+result();
+result();
 
-// console.log("X value", x);
-// console.log(y); // reference error, private variable
+console.log("X value", x);
+console.log(y); // reference error, private variable
 
 // IIFE (Immediately Invoked Function Expression)
 const privateCounter = (() => {
@@ -46,9 +46,10 @@ const privateCounter = (() => {
     }
 })();
 
-// privateCounter();
-// privateCounter();
-// privateCounter();
+privateCounter();
+privateCounter();
+privateCounter();
+
 
 const credits = ((num) => {
     let credits = num;
